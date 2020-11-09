@@ -19391,8 +19391,10 @@ function playerPlay() {
       if (winner >= 0) {
         board.classList.add("hidden");
 
-        if (winner === 2) {} else {
-          currentPlayerMsg.innerHTML = "Gana el jugador " + (winner + 1);
+        if (winner === 2) {
+          currentPlayerMsg.innerHTML = "¡Empate!";
+        } else {
+          currentPlayerMsg.innerHTML = "¡Gana el jugador " + (winner + 1) + "!";
         }
 
         return;

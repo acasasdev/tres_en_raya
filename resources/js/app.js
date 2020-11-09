@@ -57,10 +57,10 @@ function playerPlay()  {
                         board.classList.add("hidden");
 
                         if(winner === 2){
-
+                            currentPlayerMsg.innerHTML = "¡Empate!";
                         }
                         else{
-                            currentPlayerMsg.innerHTML = "Gana el jugador "+ (winner + 1);
+                            currentPlayerMsg.innerHTML = "¡Gana el jugador "+ (winner + 1) +"!";
                         }
 
                         return;
