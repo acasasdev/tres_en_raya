@@ -2,7 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\GameBoardController;
+use App\Http\Controllers\GameBoardPositionController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,6 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::get('/getPlayer/{player}', function ($player) {
+    return $player == 0 ? 1 : 0;
 });
+
+Route::get('/createBoard', [GameBoardController::class, 'create']);
+
+Route::post('/saveGameState', [GameBoardPositionController::class, 'saveGameState']);
+
