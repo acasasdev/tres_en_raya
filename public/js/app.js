@@ -19347,15 +19347,17 @@ var boxes = document.getElementsByClassName("box");
 var currentPlayer = document.getElementById('currentPlayer');
 var currentPlayerMsg = document.getElementById('currentPlayerMsg');
 var board = document.getElementById('board');
+var playAgain = document.getElementById('playAgain');
 var boardId;
 var activePlayer = 1;
 
 function startGame() {
   axios.get('/api/createBoard/').then(function (response) {
-    boardId = response.data.id;
+    boardId = response.data.gameBoardId;
     board.setAttribute('data-id', boardId);
     currentPlayer.innerHTML = activePlayer + "";
     board.classList.add("startGame");
+    prepareBoard(response.data.gameBoardLastState);
     Array.from(boxes).forEach(function (element) {
       element.addEventListener('click', playerPlay);
     });
@@ -19397,6 +19399,7 @@ function playerPlay() {
           currentPlayerMsg.innerHTML = "¡Gana el jugador " + (winner + 1) + "!";
         }
 
+        playAgain.classList.add("visible");
         return;
       }
 
@@ -19408,6 +19411,28 @@ function playerPlay() {
   })["catch"](function (error) {
     return console.error(error);
   });
+}
+
+function prepareBoard(board) {
+  var mark;
+
+  if (typeof board != null && board.length > 0) {
+    board.forEach(function (element) {
+      var box = document.querySelectorAll('[data-box="' + element.position + '"]');
+      box = box[0];
+
+      if (element.player === 0) {
+        mark = box.querySelector('.cross');
+      } else {
+        mark = box.querySelector('.circle');
+      }
+
+      mark.classList.add("visible");
+      box.classList.add("marked");
+    });
+    activePlayer = board[board.length - 1].player;
+    currentPlayer.innerHTML = (activePlayer === 0 ? 2 : 1) + "";
+  }
 }
 
 startGame();

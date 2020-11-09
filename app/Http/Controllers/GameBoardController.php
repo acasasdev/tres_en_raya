@@ -2,14 +2,26 @@
 
 namespace App\Http\Controllers;
 use App\Models\GameBoard;
-use Illuminate\Http\Request;
+use App\Models\GameBoardPosition;
+use Symfony\Component\HttpFoundation\Session\Session;
 
 class GameBoardController extends Controller
 {
     public function create()
     {
-        $gameBoard = new GameBoard;
-        $gameBoard->save();
-        return $gameBoard;
+        $session = new Session();
+        $lastBoard = $session->get('board');
+        $gameBoardLastState = [];
+
+        if($lastBoard){
+            $gameBoardLastState = GameBoardPosition::getLastBoard($lastBoard);
+        }else{
+            $gameBoard = new GameBoard;
+            $gameBoard->save();
+            $session->set('board', $gameBoard->id);
+            $session->save();
+        }
+
+        return response()->json(['gameBoardId' => $session->get('board'), 'gameBoardLastState' => $gameBoardLastState]);
     }
 }

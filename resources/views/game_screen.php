@@ -23,6 +23,7 @@
             </div>
         <?php endfor;?>
     </div>
+    <a id="playAgain" class="playAgain" href="/">volver a jugar</a>
 </div>
 
 

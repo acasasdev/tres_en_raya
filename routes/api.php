@@ -14,12 +14,13 @@ use App\Http\Controllers\GameBoardPositionController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+Route::group(['middleware' => 'web'], function () {
 
-Route::get('/getPlayer/{player}', function ($player) {
-    return $player == 0 ? 1 : 0;
+    Route::get('/getPlayer/{player}', function ($player) {
+        return $player == 0 ? 1 : 0;
+    });
+
+    Route::get('/createBoard', [GameBoardController::class, 'create']);
+
+    Route::post('/saveGameState', [GameBoardPositionController::class, 'saveGameState']);
 });
-
-Route::get('/createBoard', [GameBoardController::class, 'create']);
-
-Route::post('/saveGameState', [GameBoardPositionController::class, 'saveGameState']);
-

@@ -5,30 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f467df5d-8c32-4fac-930b-4c9a456056fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tres_en_raya.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/my.cnf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx/conf.d/app.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/vendor/modernizr-3.11.2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GameBoardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GameBoardController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GameBoardPositionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GameBoardPositionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/GameBoardPosition.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/GameBoardPosition.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/game_screen.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/game_screen.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +206,7 @@
       <workItem from="1604768657090" duration="7343000" />
       <workItem from="1604819464368" duration="10469000" />
       <workItem from="1604831441710" duration="21675000" />
-      <workItem from="1604898619205" duration="14433000" />
+      <workItem from="1604898619205" duration="24197000" />
     </task>
     <servers />
   </component>
@@ -234,6 +222,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="726" y="326" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1604767774976" />
+    <state x="690" y="279" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604922216090">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="279" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1604922216090" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1604770870717">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -262,6 +254,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="169" key="SettingsEditor/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1604822574140" />
+    <state x="667" y="124" width="585" height="801" key="find.popup" timestamp="1604919410638">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="667" y="124" width="585" height="801" key="find.popup/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1604919410638" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1604855250793">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -2,6 +2,11 @@ body{
     background: #a8bddb;
 }
 
+h1, h2, a{
+    font-family: Trebuchet MS, Arial;
+}
+
+
 .layout{
     display: flex;
     align-items: center;
@@ -13,7 +18,6 @@ body{
 h1{
     text-align: center;
     margin-top: 0;
-    font-family: Trebuchet MS, Arial;
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 3px;
@@ -24,7 +28,6 @@ h1{
 
 h2{
     font-size: 16px;
-    font-family: Trebuchet MS, Arial;
     color: #3e3838;
     text-transform: uppercase;
     margin-bottom: 30px;
@@ -38,7 +41,7 @@ h2{
 
 .board.startGame{
     opacity: 1;
-    transition: opacity 4s;
+    transition: opacity 2s;
 }
 
 .board.disabled{
@@ -117,6 +120,25 @@ h2{
 
 .endGameMsg.visible{
     display: block;
+}
+
+.playAgain{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow: 2px 2px 1px rgba(62, 56, 56, 0.45);
+    display: none;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.playAgain.visible{
+    position: absolute;
+    display: block;
+    opacity: 1;
 }
 
 @media only screen and (max-width: 530px) {

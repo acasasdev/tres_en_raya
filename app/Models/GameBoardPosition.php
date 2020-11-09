@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class GameBoardPosition extends Model
 {
     use HasFactory;
+
+    public static function getLastBoard($board)
+    {
+        return GameBoardPosition::where('board', $board)->get()->toArray();
+    }
 }
