@@ -19356,6 +19356,7 @@ function startGame() {
     boardId = response.data.gameBoardId;
     board.setAttribute('data-id', boardId);
     currentPlayer.innerHTML = activePlayer + "";
+    currentPlayerMsg.classList.add("visible");
     board.classList.add("startGame");
     prepareBoard(response.data.gameBoardLastState);
     Array.from(boxes).forEach(function (element) {

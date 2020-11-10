@@ -33,6 +33,15 @@ h2{
     margin-bottom: 30px;
 }
 
+#currentPlayerMsg{
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+#currentPlayerMsg.visible{
+    opacity: 1;
+}
+
 .board{
     width: 470px;
     height: 470px;
@@ -143,6 +152,6 @@ h2{
 
 @media only screen and (max-width: 530px) {
     .layout {
-        transform: scale(0.7)
+        transform: scale(0.65)
     }
 }

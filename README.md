@@ -1,3 +1,7 @@
+## Instalar dependencias 
+
+docker run --rm --interactive --tty --volume ${pwd}:/app composer install
+
 ## Levantar el proyecto en docker
 
 docker-compose up -d
