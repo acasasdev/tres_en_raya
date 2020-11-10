@@ -15,7 +15,7 @@ services:
       SERVICE_TAGS: dev
     working_dir: /var/www
     volumes:
-      - ./:/var/www:cached
+      - ./:/var/www
     networks:
       - app-network
 

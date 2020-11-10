@@ -8,13 +8,13 @@ cd tres_en_raya
 
 ## Instalar dependencias 
 
-### Windows
+- ### Windows
 
-docker run --rm --interactive --tty --volume ${pwd}:/app composer install
+    - docker run --rm --interactive --tty --volume ${pwd}:/app composer install
 
-### Linux
+- ### Linux
 
-docker run --rm -v $(pwd):/app composer install
+   - docker run --rm -v $(pwd):/app composer install
 
 ## Levantar el proyecto en docker
 
