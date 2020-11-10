@@ -1,4 +1,4 @@
-#Pasos
+# Pasos
 
 ## Clonar el proyecto
 
