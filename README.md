@@ -1,8 +1,10 @@
+#Pasos
+
 ## Clonar el proyecto
 
 git clone https://github.com/acasasdev/tres_en_raya.git tres_en_raya
 
-## Entrar al proyecto
+## Entrar a la carpeta del proyecto
 
 cd tres_en_raya
 
