@@ -1,6 +1,6 @@
 ## Clonar el proyecto
 
-https://github.com/acasasdev/tres_en_raya.git tres_en_raya
+git clone https://github.com/acasasdev/tres_en_raya.git tres_en_raya
 
 ## Entrar al proyecto
 
@@ -42,7 +42,7 @@ Abrir en el navegador http://localhost
     - app\Http\Controllers\GameBoardController.php => Se encarga de dar de alta el tablero de juego en la BBDD
     - app\Http\Controllers\GameBoardPositionController.php => Se encarga de almacenar las posiciones de los jugadores en la BBDD y gestionar la lógica de victoria
     - resources\views\game_screen.php => vista de la pantalla de juego
-    - resources\js\app.js => gestiona la interacción de los jugadores con la pantalla de juego y realiza las peticiones al la API de PHP
+    - resources\js\app.js => gestiona la interacción de los jugadores con la pantalla de juego y realiza las peticiones a la API de PHP
 
 #### Notas de uso
 
