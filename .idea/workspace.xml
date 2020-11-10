@@ -7,6 +7,7 @@
     <list default="true" id="f467df5d-8c32-4fac-930b-4c9a456056fb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/GameBoardPositionFactory.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +198,7 @@
       <workItem from="1604819464368" duration="10469000" />
       <workItem from="1604831441710" duration="21675000" />
       <workItem from="1604898619205" duration="25909000" />
-      <workItem from="1604987095129" duration="2739000" />
+      <workItem from="1604987095129" duration="5399000" />
     </task>
     <servers />
   </component>
